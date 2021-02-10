@@ -1,0 +1,13 @@
+name:pythonenv
+channels:
+ - conda-forge
+dependencies:
+ - python=3.8
+ - librosa=0.8.0
+ - python-sounddevice=0.4.1
+ - ffmpeg
+ - pydub=0.23.1
+ - numpy
+ - scipy
+ - matplotlib
+ - jupyter
