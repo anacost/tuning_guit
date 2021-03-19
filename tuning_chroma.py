@@ -1,6 +1,7 @@
 import sounddevice as sd
 from scipy.io.wavfile import write
 import librosa
+import librosa.display
 fs = 44100 #Sample rate
 seconds = 4 #duration of recording
 print('start recording')
@@ -13,4 +14,4 @@ chroma = librosa.feature.chroma_cqt(y=y, sr=sr)
 fig, ax = plt.subplots()
 img = librosa.display.specshow(chroma, y_axis='chroma', x_axis='time',ax=ax)
 ax.set(title='Chromagram demostration')
-fig.colorbar(img, ax=ax)
+fig.colorbar(img, ax=ax);
