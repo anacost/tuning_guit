@@ -2,6 +2,7 @@ import sounddevice as sd
 from scipy.io.wavfile import write
 import librosa
 import librosa.display
+import matplotlib.pyplot as plt
 fs = 44100 #Sample rate
 seconds = 4 #duration of recording
 print('start recording')
